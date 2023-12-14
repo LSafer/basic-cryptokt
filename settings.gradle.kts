@@ -12,4 +12,4 @@ pluginManagement {
     }
 }
 
-rootProject.name = "BasicCryptoKT"
+rootProject.name = "crypto-extensions"
