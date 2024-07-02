@@ -28,3 +28,27 @@ actual fun String.sha384(): ByteArray {
 actual fun String.sha512(): ByteArray {
     return encodeToByteArray().sha512()
 }
+
+actual fun ByteArray.sha256ToString(): String {
+    return sha256().encodeHex()
+}
+
+actual fun ByteArray.sha384ToString(): String {
+    return sha384().encodeHex()
+}
+
+actual fun ByteArray.sha512ToString(): String {
+    return sha512().encodeHex()
+}
+
+actual fun String.sha256ToString(): String {
+    return sha256().encodeHex()
+}
+
+actual fun String.sha384ToString(): String {
+    return sha384().encodeHex()
+}
+
+actual fun String.sha512ToString(): String {
+    return sha512().encodeHex()
+}
